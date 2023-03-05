@@ -8,22 +8,21 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.Navigation
 
-class BlankFragment2 : Fragment() {
+class BlankFragment4 : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_blank2, container, false)
+        return inflater.inflate(R.layout.fragment_blank4, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.btn2).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_blankFragment2_to_blankFragment3)
+        view.findViewById<Button>(R.id.btn4).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_blankFragment4_to_blankFragment5)
         }
-
     }
 
 }
